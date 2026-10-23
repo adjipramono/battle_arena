@@ -200,17 +200,6 @@ Still stuck after the routine? Ask a classmate or your teacher, and **explain th
 
 ---
 
-## Using the Solutions
-
-The `solution` folder has a working version for each station. Use it well:
-
-- **Try first.** Give it a real attempt before you look. Getting stuck is part of learning.
-- **Look at one function at a time,** not the whole file.
-- **Compare, don't copy.** Read the solution, close it, and write your own version. If you can't write it without peeking, you don't understand it yet.
-- **Your code can be different and still correct.** If your game plays like the expected scenarios, it works.
-
----
-
 ## Finished? Level Up
 
 - Done with **Rookie**? Try **Fighter**.
