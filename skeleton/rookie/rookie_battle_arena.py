@@ -19,14 +19,17 @@ def attack(hp, damage):
 def roll_damage(low=5, high=15):
     # TODO 1: return a random whole number between low and high
     # Hint: random.randint(low, high)
-    pass
+    return random.randint(low, high)
 
 
 def heal(hp, amount=15, max_hp=100):
     # TODO 2: add amount to hp
     # TODO 3: if hp is now more than max_hp, set it to max_hp
     # TODO 4: return the new hp
-    pass
+    new_hp = hp + amount
+    if new_hp > max_hp:
+        new_hp = max_hp
+    return new_hp
 
 
 # ---------- STAGE 1 CHECKPOINT: test your functions ----------
@@ -49,13 +52,18 @@ while hero_hp > 0 and monster_hp > 0:
     choice = input("Choose (a)ttack or (h)eal: ")
 
     if choice == "a":
+        damage = roll_damage()
+        monster_hp = attack(monster_hp, damage)
+        print("Hero hits for", damage)
         # TODO 5: roll damage, then use attack() on monster_hp
         # TODO 6: print "Hero hits for" and the damage
-        pass
+        # pass
     elif choice == "h":
+        hero_hp = heal(hero_hp)
+        print("Hero heals!")
         # TODO 7: use heal() on hero_hp
         # TODO 8: print "Hero heals!"
-        pass
+        # pass
     else:
         print("Invalid choice. You lose your turn!")
 
