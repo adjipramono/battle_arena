@@ -33,13 +33,7 @@ w4/
 │   └── champion/
 │       ├── README.MD
 │       └── champion_battle_arena.py
-└── solution/                        <- check your work AFTER you've tried
-    ├── rookie/
-    │   └── sol_rookie_battle_arena.py
-    ├── fighter/
-    │   └── sol_fighter_battle_arena.py
-    └── champion/
-        └── sol_champion_battle_arena.py
+
 ```
 
 ---
